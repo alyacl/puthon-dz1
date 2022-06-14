@@ -1,0 +1,22 @@
+from tkinter import *
+
+window = Tk()
+window.title("Проект по питону")
+window.geometry('975x800')
+def functionx():
+    print("будут прописаны функции")
+importButton = Button(window, text="Импорт", command=functionx, width=15)
+importButton.grid(column=0, row=0, sticky='nw')
+exportButton = Button(window, text="Экспорт", command=functionx, width=15)
+exportButton.grid(column=1, row=0, sticky='nw')
+changeButton = Button(window, text="Изменить", command=functionx, width=15)
+changeButton.grid(column=2, row=0, sticky='nw')
+addButton = Button(window, text="Добавить", command=functionx, width=15)
+addButton.grid(column=3, row=0, sticky='nw')
+findButton = Button(window, text="Найти", command=functionx, width=15)
+findButton.grid(column=4, row=0, sticky='nw')
+graphicButton = Button(window, text="Графики", command=functionx, width=15)
+graphicButton.grid(column=5, row=0, sticky='nw')
+managmentButton = Button(window, text="Руководство", command=functionx, width=15)
+managmentButton.grid(column=6, row=0, sticky='nw')
+window.mainloop()
